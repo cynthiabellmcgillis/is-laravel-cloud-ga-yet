@@ -3,6 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Is Laravel Cloud GA Yet?">
+        <meta property="og:description" content="Not yet, but soon!">
+        <meta property="og:image" content="{{ asset('images/cynthia joke page og.png') }}">
+        <meta property="og:url" content="https://is-laravel-cloud-ga-yet-main-h2infv.laravel.cloud">
+        <meta property="og:type" content="website">
+    
         <title>Is Laravel Cloud GA Yet?</title>
         <style>
             body {
