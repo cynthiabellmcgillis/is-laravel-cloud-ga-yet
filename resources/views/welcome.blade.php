@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Is Laravel Cloud GA Yet?">
-        <meta property="og:description" content="Not yet, but soon!">
-        <meta property="og:image" content="https://is-laravel-cloud-ga-yet-main-h2infv.laravel.cloud/images/cynthia-joke-page-og.png">
-        <meta property="og:url" content="https://is-laravel-cloud-ga-yet-main-h2infv.laravel.cloud">
-        <meta property="og:type" content="website">
+       
+       
+
+
+
+
+<!-- HTML Meta Tags -->
+<title>Is Laravel Cloud GA Yet?</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://is-laravel-cloud-ga-yet-main-h2infv.laravel.cloud/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Is Laravel Cloud GA Yet?">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/714f5745-f268-4f13-9273-65861b782a38.png?token=xECXDXEYDZNd4e0Qux-CRJDEt4cTWgAHvqiNauAn7Gg&height=630&width=1200&expires=33272898289">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="is-laravel-cloud-ga-yet-main-h2infv.laravel.cloud">
+<meta property="twitter:url" content="https://is-laravel-cloud-ga-yet-main-h2infv.laravel.cloud/">
+<meta name="twitter:title" content="Is Laravel Cloud GA Yet?">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/714f5745-f268-4f13-9273-65861b782a38.png?token=xECXDXEYDZNd4e0Qux-CRJDEt4cTWgAHvqiNauAn7Gg&height=630&width=1200&expires=33272898289">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
     
-        <title>Is Laravel Cloud GA Yet?</title>
         <style>
             body {
                 margin: 0;
