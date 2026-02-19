@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laravel AI-First Framework Positioning</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #d0d0d0; line-height: 1.7; }
+
+  .hero { padding: 4rem 2rem 3rem; max-width: 900px; margin: 0 auto; }
+  .hero h1 { font-size: 2.25rem; color: #fff; margin-bottom: 0.5rem; }
+  .hero .tagline { font-size: 1.1rem; color: #ff4433; font-weight: 600; margin-bottom: 0.5rem; }
+  .hero .sub { color: #777; font-size: 0.9rem; }
+
+  .content { max-width: 900px; margin: 0 auto; padding: 0 2rem 4rem; }
+
+  /* Section styles */
+  .section { margin-bottom: 3rem; }
+  .section h2 { font-size: 1.35rem; color: #fff; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid #1a1a1a; }
+  .section h3 { font-size: 1.05rem; color: #ccc; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .section p { margin-bottom: 1rem; font-size: 0.92rem; }
+
+  /* Quote blocks */
+  .quote { border-left: 3px solid #ff4433; padding: 1rem 1.25rem; background: #111; border-radius: 0 8px 8px 0; margin: 1.25rem 0; font-style: italic; color: #bbb; }
+  .quote .attr { font-style: normal; color: #666; font-size: 0.8rem; margin-top: 0.5rem; }
+
+  /* Headline candidates */
+  .headline-card { background: #111; border: 1px solid #222; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+  .headline-card .h1-candidate { font-size: 1.4rem; color: #fff; font-weight: 700; margin-bottom: 0.35rem; }
+  .headline-card .h2-candidate { font-size: 1rem; color: #999; }
+  .headline-card .status { display: inline-block; font-size: 0.65rem; padding: 2px 8px; border-radius: 99px; margin-top: 0.75rem; font-weight: 600; }
+  .status-current { background: #1a3a1a; color: #5bfa5b; }
+  .status-alt { background: #3a3a1a; color: #fafa5b; }
+  .status-aggressive { background: #3a1a1a; color: #fa5b5b; }
+
+  /* Pillars */
+  .pillar { background: #111; border: 1px solid #1a1a1a; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+  .pillar h4 { color: #ff4433; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+  .pillar h3 { color: #fff; font-size: 1.1rem; margin-bottom: 0.75rem; margin-top: 0; }
+  .pillar ul { margin-left: 1.25rem; }
+  .pillar li { margin-bottom: 0.4rem; font-size: 0.9rem; }
+
+  /* Competitive table */
+  table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.85rem; }
+  th { text-align: left; padding: 0.6rem 0.75rem; background: #151515; color: #888; font-weight: 600; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px; border-bottom: 1px solid #222; }
+  td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #1a1a1a; }
+  tr:hover td { background: #111; }
+  .check { color: #5bfa5b; }
+  .cross { color: #fa5b5b; }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before { content: ""; position: absolute; left: 0.5rem; top: 0; bottom: 0; width: 2px; background: #222; }
+  .timeline-item { position: relative; margin-bottom: 1.5rem; }
+  .timeline-item::before { content: ""; position: absolute; left: -1.65rem; top: 0.5rem; width: 10px; height: 10px; background: #ff4433; border-radius: 50%; }
+  .timeline-item h4 { color: #fff; font-size: 0.9rem; margin-bottom: 0.25rem; }
+  .timeline-item p { font-size: 0.85rem; color: #888; }
+
+  .source-tag { display: inline-block; font-size: 0.65rem; background: #1a1a2a; color: #6b8afd; padding: 1px 6px; border-radius: 4px; text-decoration: none; margin-left: 0.25rem; }
+  .source-tag:hover { background: #2a2a3a; }
+
+  .callout { background: linear-gradient(135deg, #1a0a0a 0%, #0a0a1a 100%); border: 1px solid #2a1a1a; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+  .callout h3 { color: #ff4433; margin-top: 0; }
+
+  .footer { max-width: 900px; margin: 0 auto; padding: 2rem; border-top: 1px solid #1a1a1a; font-size: 0.75rem; color: #444; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="tagline">INTERNAL POSITIONING DOCUMENT</div>
+  <h1>Laravel: The AI-First Framework</h1>
+  <p class="sub">Synthesized from 8 meetings across Feb 11&ndash;18, 2026 &middot; Featuring Taylor Otwell, Hank Taylor, Jeremy Butler, and team</p>
+</div>
+
+<div class="content">
+
+<!-- THE CORE THESIS -->
+<div class="section">
+  <h2>1. The Core Thesis</h2>
+  <p>Laravel's 15+ years of opinionated, convention-driven architecture &mdash; the same qualities that made it beloved by human developers &mdash; make it <strong>uniquely effective for AI agents</strong>. While other ecosystems require stitching together dozens of packages with no guardrails, Laravel's structure gives AI agents the constraints they need to write correct, production-ready code.</p>
+
+  <div class="quote">
+    "The same thing that made it easy for developers to build in Laravel &mdash; because it's like, oh, I know where this file goes, I can kind of turn my brain off on certain things &mdash; it also makes it legitimately easier for the AI to build things."
+    <div class="attr">&mdash; Taylor Otwell, Laravel Homepage Jam, Feb 17 <a class="source-tag" href="https://notes.granola.ai/d/cd82624d-6883-4e87-9b0d-ec6a3bd56bdc">source</a></div>
+  </div>
+
+  <div class="quote">
+    "Language is becoming less relevant as AI writes more code, making framework structure more important than syntax preferences."
+    <div class="attr">&mdash; Team consensus, multiple meetings <a class="source-tag" href="https://notes.granola.ai/d/f7abda8a-5569-4427-9435-4f65b9106cb2">source</a></div>
+  </div>
+
+  <p>This creates a dual opportunity: <strong>defensive</strong> (staying relevant as AI transforms development) and <strong>offensive</strong> (attracting developers from other ecosystems who want better AI-generated code quality).</p>
+</div>
+
+<!-- HEADLINE EVOLUTION -->
+<div class="section">
+  <h2>2. Homepage Headline Evolution</h2>
+  <p>The team has been iterating on how to express this positioning at the very top of laravel.com:</p>
+
+  <div class="headline-card">
+    <div class="h1-candidate">A Framework and Platform for Artisans and Agents</div>
+    <div class="h2-candidate">Laravel delivers the framework and infrastructure developers and agents need to ship full-stack applications.</div>
+    <span class="status status-current">CURRENT DIRECTION</span>
+  </div>
+
+  <div class="headline-card">
+    <div class="h1-candidate">An Agent-Ready Framework</div>
+    <div class="h2-candidate">Humans and agents thrive on structure. Laravel's opinionated framework enables clarity and scale throughout the entire stack.</div>
+    <span class="status status-alt">ALTERNATIVE &mdash; TAYLOR'S PREFERRED VARIANT</span>
+  </div>
+
+  <div class="headline-card">
+    <div class="h1-candidate">Stop Building Slop</div>
+    <div class="h2-candidate">Your agents are writing slop because you're using the wrong framework. Laravel is the antidote.</div>
+    <span class="status status-aggressive">AGGRESSIVE &mdash; RESERVED FOR LARAVEL.COM/AI PAGE</span>
+  </div>
+
+  <h3>Key Copy Decisions Made</h3>
+  <ul style="margin-left: 1.25rem; margin-bottom: 1rem;">
+    <li><strong>Kill the word "modern"</strong> &mdash; "It's 2026. Modern is cringe." (Cynthia)</li>
+    <li><strong>Kill "cloud solutions"</strong> &mdash; too Microsoft Word / 2025 energy</li>
+    <li><strong>Drop PHP from the hero</strong> &mdash; irrelevant to the positioning; language is becoming less important</li>
+    <li><strong>Keep "batteries included"</strong> &mdash; well understood, unique to Laravel, use to explain code examples</li>
+    <li><strong>Keep "Artisans" capitalized</strong> &mdash; it's the community identity, not a generic word</li>
+    <li><strong>"Slop Stack"</strong> coined by Hank &mdash; save for aggressive Laravel AI page, not main homepage</li>
+  </ul>
+</div>
+
+<!-- FOUR PILLARS -->
+<div class="section">
+  <h2>3. The Four Positioning Pillars</h2>
+
+  <div class="pillar">
+    <h4>Pillar 1</h4>
+    <h3>Structure That Agents Need</h3>
+    <ul>
+      <li>Opinionated conventions prevent AI hallucination and "spiraling"</li>
+      <li>Built-in opinions on database, queuing, mail, file storage = fewer decisions for AI to get wrong</li>
+      <li>15 years of consistent patterns means massive training data in AI models</li>
+      <li>Contrast: JavaScript ecosystem is "a puzzle with potholes" &mdash; hexagon (Node) doesn't fit with circle (Clerk) doesn't fit with triangle (Next.js)</li>
+      <li>Laravel is "a neat, perfectly efficient grid" where everything snaps together</li>
+    </ul>
+    <div class="quote" style="margin-bottom: 0;">
+      "We are the only full-stack application framework that has the full platform behind it. You bring a React front end, batteries included, full platform behind it, actually full stack."
+      <div class="attr">&mdash; Taylor Otwell, Homepage Copy, Feb 13 <a class="source-tag" href="https://notes.granola.ai/d/f7abda8a-5569-4427-9435-4f65b9106cb2">source</a></div>
+    </div>
+  </div>
+
+  <div class="pillar">
+    <h4>Pillar 2</h4>
+    <h3>Full-Stack AI Integration</h3>
+    <ul>
+      <li><strong>Laravel AI SDK</strong> &mdash; unified interface for OpenAI, Anthropic, Grok, Gemini</li>
+      <li>Agent-based architecture with reusable components (Agent classes built-in)</li>
+      <li>Image analysis, generation, audio, transcription capabilities</li>
+      <li>Deep integration with Laravel ecosystem: storage, database, queues, broadcasting</li>
+      <li>SDK announcement was the most-liked X post of the month</li>
+    </ul>
+  </div>
+
+  <div class="pillar">
+    <h4>Pillar 3</h4>
+    <h3>Cloud as the AI Deployment Layer</h3>
+    <ul>
+      <li><strong>API + CLI</strong> &mdash; agents can deploy on your behalf (launching Feb 27 at Laracon EU)</li>
+      <li><strong>Full-stack preview environments</strong> &mdash; with separate database, queue, cache per preview (major advantage over Vercel which "punts on" the database)</li>
+      <li><strong>Night Watch MCP integration</strong> &mdash; ask Claude Code to fix a bug from Night Watch, it ships to Cloud automatically</li>
+      <li><strong>Auto-scaling</strong> &mdash; "perfectly provisioned infrastructure every time" (the #1 reason customers buy Cloud)</li>
+      <li><strong>Hibernation</strong> &mdash; apps, databases, caches sleep when idle, wake instantly</li>
+      <li>The demo workflow for Laracon EU: bug in Night Watch &rarr; Claude Code fixes it &rarr; ships to Cloud &rarr; preview link</li>
+    </ul>
+  </div>
+
+  <div class="pillar">
+    <h4>Pillar 4</h4>
+    <h3>The "Thinking Person's Framework"</h3>
+    <ul>
+      <li>Anti-slop positioning &mdash; craft and quality over speed-at-all-costs</li>
+      <li>Parallel to how Anthropic positioned Claude as "the thinking man's AI"</li>
+      <li>"We are sticking our flag in the ground that we are the framework for the AI age &mdash; if you want to be productive and ship."</li>
+      <li>The "Artisans and Agents" framing: AI accelerates human productivity, doesn't replace craft</li>
+      <li>"Hallucination-free" and "spiral-free" development as a tangible benefit</li>
+    </ul>
+    <div class="quote" style="margin-bottom: 0;">
+      "We're positioning ourselves as anti-slop, even from the AI angle. Anthropic has done such a good job of this &mdash; they've somehow positioned themselves as the thinking man's AI. That's kind of similar to what we're trying to do here."
+      <div class="attr">&mdash; Taylor Otwell, Homepage Copy, Feb 13 <a class="source-tag" href="https://notes.granola.ai/d/f7abda8a-5569-4427-9435-4f65b9106cb2">source</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPETITIVE POSITIONING -->
+<div class="section">
+  <h2>4. Competitive Positioning</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Capability</th>
+        <th>Laravel</th>
+        <th>Next.js / Vercel</th>
+        <th>Rails / Fly.io</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Opinionated conventions for AI</td>
+        <td class="check">Strong</td>
+        <td class="cross">Fragmented ecosystem</td>
+        <td class="check">Strong</td>
+      </tr>
+      <tr>
+        <td>Full-stack (DB, queue, cache, mail)</td>
+        <td class="check">Built-in</td>
+        <td class="cross">Third-party required</td>
+        <td class="check">Built-in</td>
+      </tr>
+      <tr>
+        <td>First-party AI SDK</td>
+        <td class="check">Multi-provider unified SDK</td>
+        <td class="cross">Vercel AI SDK (limited)</td>
+        <td class="cross">None</td>
+      </tr>
+      <tr>
+        <td>Agent classes / architecture</td>
+        <td class="check">Built-in</td>
+        <td class="cross">DIY</td>
+        <td class="cross">DIY</td>
+      </tr>
+      <tr>
+        <td>Full-stack preview environments</td>
+        <td class="check">DB + queue + cache</td>
+        <td class="cross">Frontend only</td>
+        <td class="cross">Limited</td>
+      </tr>
+      <tr>
+        <td>Auto-scaling infrastructure</td>
+        <td class="check">Native Cloud</td>
+        <td class="check">Vercel (frontend)</td>
+        <td class="check">Fly Machines</td>
+      </tr>
+      <tr>
+        <td>Integrated observability (MCP)</td>
+        <td class="check">Night Watch + Claude</td>
+        <td class="cross">Third-party</td>
+        <td class="cross">Third-party</td>
+      </tr>
+      <tr>
+        <td>React frontend support</td>
+        <td class="check">Starter kits + Inertia</td>
+        <td class="check">Native</td>
+        <td class="cross">Hotwire only</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <h3>The "Slop Stack" Counter-Positioning</h3>
+    <p>Hank coined <strong>"Slop Stack"</strong> to describe the JS ecosystem's chaos: "Imagine a puzzle with potholes. React is a hexagon, Node is a circle, Clerk is a triangle &mdash; AI shoving those together creates gaps everywhere. Laravel is a neat, perfectly efficient grid."</p>
+    <p>Visual concept for homepage: Left side shows the Slop Stack (mismatched shapes with gaps), right side shows Laravel (perfect Lego-like grid that snaps together). Animation cycles through use cases (finance app, portfolio site) &mdash; Laravel's grid always fits; the slop stack always has holes.</p>
+    <p><strong>Decision:</strong> Too aggressive for main homepage. Reserved for dedicated <code>laravel.com/ai</code> page where messaging can be more provocative.</p>
+  </div>
+</div>
+
+<!-- THE AI STORY ARC -->
+<div class="section">
+  <h2>5. The Full AI Story Arc (Laracon EU Demo)</h2>
+  <p>Taylor is planning to demonstrate this end-to-end workflow on stage at Laracon EU (Feb 27):</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>1. Build with AI Agents</h4>
+      <p>Use Claude Code / coding agents to build a Laravel app. The opinionated structure means agents write correct code the first time &mdash; no hallucination, no spiral.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>2. Deploy via CLI / API</h4>
+      <p>Agents ship directly to Laravel Cloud via the new CLI and API. No manual deploys needed.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>3. Preview Environments</h4>
+      <p>Every PR gets a full-stack preview with its own database, queue, and cache. Agent-generated PRs automatically get preview links.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>4. Monitor with Night Watch</h4>
+      <p>Night Watch catches errors and performance issues in production. Real-time observability.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>5. Auto-Fix with MCP</h4>
+      <p>"Hey Claude, go fix this bug that's in Night Watch." Claude Code pulls the error via MCP, writes the fix, and ships it back to Cloud. Automated debugging loop.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>6. Auto-Scale</h4>
+      <p>Cloud auto-scales infrastructure. No over-provisioning. Apps hibernate when idle. "Perfectly provisioned infrastructure every time."</p>
+    </div>
+  </div>
+
+  <div class="quote">
+    "It's this nice full circle moment. We have automated debugging, we can ship. It just works."
+    <div class="attr">&mdash; Taylor Otwell, Homepage Copy, Feb 13 <a class="source-tag" href="https://notes.granola.ai/d/f7abda8a-5569-4427-9435-4f65b9106cb2">source</a></div>
+  </div>
+</div>
+
+<!-- MARKET SIGNALS -->
+<div class="section">
+  <h2>6. Market Signals &amp; Validation</h2>
+
+  <h3>External Signals</h3>
+  <ul style="margin-left: 1.25rem; margin-bottom: 1rem;">
+    <li>Taylor's friend at poker: <em>"Oh yeah, you gotta use something like Laravel. It doesn't work with JavaScript at all."</em> (talking about AI coding agents, unprompted)</li>
+    <li>OpenAI has had job postings looking for Laravel developers</li>
+    <li>AI SDK announcement was the most-liked X post of the month</li>
+    <li>Commit messages in Cloud repos already show patterns like "PR created by Claude" &mdash; potential for personalized onboarding</li>
+    <li>Real-world customer using Claude Code: "I need auth." &rarr; done. "I need a queue." &rarr; done. No third-party signups.</li>
+  </ul>
+
+  <h3>Internal Metrics</h3>
+  <ul style="margin-left: 1.25rem; margin-bottom: 1rem;">
+    <li>January was one of the best months ever for MAUs; February pacing ahead</li>
+    <li>15% more subscriptions this month vs. last, "multiple factors including AI products"</li>
+    <li>February already at $400K ARR growth (only 1/3 through the month)</li>
+    <li>SDK and AI content driving significant engagement across all channels</li>
+    <li>DevRel shipped 12+ videos in 6 weeks (AI-related content performing best)</li>
+  </ul>
+</div>
+
+<!-- HOMEPAGE VISUAL STRATEGY -->
+<div class="section">
+  <h2>7. Homepage Visual Strategy</h2>
+
+  <h3>Hero Animation</h3>
+  <p>Lego-style blocks snapping together perfectly &mdash; representing Laravel's integrated ecosystem. Animation cycles through different app types (finance app, portfolio site, e-commerce) and the blocks always fit perfectly. Contrast with the competitor "pothole puzzle" where shapes never align.</p>
+
+  <h3>Batteries Included Section</h3>
+  <p>Show actual code examples (not abstract imagery) for: <strong>Auth, Mail, File Storage, Database, Queues</strong>. Each tab demonstrates how Laravel handles it natively with zero third-party packages. "These images don't tell you much of anything" &mdash; replace with code that tells the story.</p>
+
+  <h3>Cloud Section (Full Width)</h3>
+  <p>Focus on auto-scaling visualization: compute utilization going down (hibernation) and waking up on demand. Animated infrastructure graph showing cost savings. This is "why people buy Cloud."</p>
+
+  <h3>React Integration (Smaller Section)</h3>
+  <p>"Works with the front ends you love" &mdash; React, Vue, Svelte. Position Laravel as the backend for React front ends. "We want to overtake Node."</p>
+
+  <h3>Night Watch Section</h3>
+  <p>Standard monitoring timeline showing request times, database query performance. Keep this section focused on the typical observability value prop, not AI.</p>
+
+  <h3>Brand Logos Confirmed</h3>
+  <p>Apple, WebFlow, Square, Ferrari (replacing Marvel), Canon, OpenAI. "Ferrari is classy. Kill Marvel &mdash; nobody goes 'wow, they're running a big thing.' Trade Marvel for Ferrari."</p>
+</div>
+
+<!-- MESSAGING TIERS -->
+<div class="section">
+  <h2>8. Messaging Architecture</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Surface</th>
+        <th>Tone</th>
+        <th>Key Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>laravel.com homepage</strong></td>
+        <td>Confident, welcoming</td>
+        <td>"A framework and platform for artisans and agents." Show the ecosystem fitting together beautifully.</td>
+      </tr>
+      <tr>
+        <td><strong>laravel.com/ai</strong> (future)</td>
+        <td>Aggressive, provocative</td>
+        <td>"Stop writing slop." The anti-chaos manifesto. SDK, MCP, Boost in one place.</td>
+      </tr>
+      <tr>
+        <td><strong>Laracon EU stage</strong></td>
+        <td>Demo-driven, aspirational</td>
+        <td>Live demo: bug in Night Watch &rarr; Claude fixes &rarr; ships to Cloud. "Automated debugging."</td>
+      </tr>
+      <tr>
+        <td><strong>Docs navigation</strong></td>
+        <td>Practical, clear</td>
+        <td>"Agent Setup" as second nav item after Installation. Link to docs/ai.</td>
+      </tr>
+      <tr>
+        <td><strong>Social / X</strong></td>
+        <td>Spicy, meme-worthy</td>
+        <td>Taylor tweets "Slop Stack" when the moment is right. Screenshot-worthy homepage moments.</td>
+      </tr>
+      <tr>
+        <td><strong>Cloud marketing</strong></td>
+        <td>Outcome-focused</td>
+        <td>"Understaffed and over-provisioned" &mdash; auto-scaling solves both. "Out of the box DevOps."</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- OPEN QUESTIONS -->
+<div class="section">
+  <h2>9. Open Questions &amp; Next Steps</h2>
+
+  <div class="pillar" style="border-color: #332200;">
+    <h4>Unresolved</h4>
+    <h3>Decisions Still Needed</h3>
+    <ul>
+      <li><strong>H2 subheader:</strong> Team agrees the current subheader is "vanilla" and needs to be more provocative. No final copy yet.</li>
+      <li><strong>Single viewport homepage:</strong> Hank's radical concept (one screen, no scroll, slop stack vs Laravel stack). Jeremy exploring feasibility. Team lukewarm but willing to experiment.</li>
+      <li><strong>React / Blade:</strong> Homepage will ship in Blade first, then port to React/Inertia. Chip meeting to clarify migration timeline.</li>
+      <li><strong>laravel.com/ai page:</strong> Agreed as the venue for aggressive "anti-slop" messaging. No timeline yet. Will house SDK, MCP, and Boost.</li>
+      <li><strong>Branding:</strong> "Laravel is red and Cloud is blue and it is such a jump scare." Cloud branding should align when subdomains collapse.</li>
+    </ul>
+  </div>
+
+  <div class="pillar" style="border-color: #003322;">
+    <h4>Immediate</h4>
+    <h3>Next Actions for Positioning</h3>
+    <ul>
+      <li>Jeremy: Complete hero animation (Lego blocks snapping), pass Figma to Tim for build</li>
+      <li>Cynthia + Taylor: Finalize AI-focused copy for middle homepage sections</li>
+      <li>Hank: Voice memo + sketches to Jeremy for single viewport exploration</li>
+      <li>Tim: Begin homepage build in Blade once Figma handoff complete</li>
+      <li>Taylor: Review and align docs "Agent Setup" section with homepage messaging</li>
+      <li>Ana: Prepare API/CLI launch materials for Feb 27 Laracon EU</li>
+      <li>Emily: Launch plan in place with blog post draft for Laracon EU announcements</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Compiled from Granola meeting notes &middot; Feb 18, 2026</p>
+  <p>Source meetings: Homepage Jam (Feb 17), Homepage Copy (Feb 13), GTM LT Weekly (Feb 18), CJC Sync (Feb 13), DG Campaign Brainstorm (Feb 13), Cloud Metrics Review (Feb 12), Elle/Cynthia (Feb 17), Cloud User Activation (Feb 12)</p>
+</div>
+
+</body>
+</html>
